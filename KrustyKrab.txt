@@ -1,0 +1,60 @@
+1. Identify the Entities
+Krusty Krab
+Employees
+Menu Items
+Customers
+Orders (To capture the ordering process)
+2. Determine the Attributes for Each Entity
+Krusty Krab
+
+Location
+Phone Number
+Opening Hours
+Employees
+
+Name
+Employee ID (Primary Key)
+Position
+Salary
+Menu Items
+
+Name
+Description
+Price
+Ingredients
+Customers
+
+Name
+Contact Information (Phone Number, Email)
+Orders
+
+Order ID (Primary Key)
+Order Date
+Quantity
+Total Price
+3. Define the Relationships Between Entities
+Employees work at the Krusty Krab
+
+Relationship: Works_At
+Cardinality: One Krusty Krab has many Employees (1 to many).
+Employees serve Customers
+
+Relationship: Serves
+Cardinality: Many Employees can serve many Customers (many to many).
+Menu Items are available at the Krusty Krab
+
+Relationship: Available_At
+Cardinality: One Krusty Krab can have many Menu Items (1 to many).
+Customers place Orders for Menu Items
+
+Relationship: Places
+Cardinality: Each Customer can place many Orders, and each Order can contain multiple Menu Items (many to many).
+4. Determine the Cardinalities of the Relationships
+Works_At: One Krusty Krab —> Many Employees (1
+)
+Serves: Many Employees —> Many Customers (M
+)
+Available_At: One Krusty Krab —> Many Menu Items (1
+)
+Places: Many Customers —> Many Orders (M
+)
